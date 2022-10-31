@@ -1,0 +1,144 @@
+<!doctype html><html lang=en><head><title>Hướng dẫn tạo ứng dụng TodoList với javasript - Pure theme for Hugo</title><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name=renderer content="webkit"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black"><meta name=format-detection content="telephone=no,email=no,adress=no"><meta name=theme-color content="#000000"><meta http-equiv=window-target content="_top"><meta name=keywords content="làm ứng dụng todo list,học js,học css,học html,code block"><meta name=description content="Hướng dẫn tạo ứng dụng todo list với javascript"><meta name=generator content="Hugo 0.104.3 with theme pure"><title>Hướng dẫn tạo ứng dụng TodoList với javasript - Pure theme for Hugo</title><link rel=stylesheet href=/css/style.min.a85959a41e7abcc0db1f81f44bd264649303417f91b536e87dcde644340fea6d.css><link rel=stylesheet href=https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css async><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css async><meta property="og:title" content="Hướng dẫn tạo ứng dụng TodoList với javasript"><meta property="og:description" content="Hướng dẫn tạo ứng dụng todo list với javascript"><meta property="og:type" content="article"><meta property="og:url" content="/2022/10/todolist/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-27T00:00:00+00:00"><meta property="article:modified_time" content="2022-10-27T00:00:00+00:00"><meta property="og:see_also" content="/2022/10/quizapp/"><meta itemprop=name content="Hướng dẫn tạo ứng dụng TodoList với javasript"><meta itemprop=description content="Hướng dẫn tạo ứng dụng todo list với javascript"><meta itemprop=datePublished content="2022-10-27T00:00:00+00:00"><meta itemprop=dateModified content="2022-10-27T00:00:00+00:00"><meta itemprop=wordCount content="465"><meta itemprop=keywords content="html,css,javascript,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Hướng dẫn tạo ứng dụng TodoList với javasript"><meta name=twitter:description content="Hướng dẫn tạo ứng dụng todo list với javascript"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body class="main-center theme-blue" itemscope itemtype=http://schema.org/WebPage><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=slimContent><div class=navbar-header><div class="profile-block text-center"><a id=avatar href=https://github.com/anhdai9966 target=_blank><img class="img-circle img-rotate" src=avatar.png width=200 height=200></a><h2 id=name class="hidden-xs hidden-sm">dailai9966</h2><h3 id=title class="hidden-xs hidden-sm hidden-md">dai lai</h3><small id=location class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Đại Mỗ, Hà Nội</small></div><div class=search id=search-form-wrap><form class="search-form sidebar-form"><div class=input-group><input type=text class="search-form-input form-control" placeholder=Search>
+<span class=input-group-btn><button type=submit class="search-form-submit btn btn-flat" onclick=return!1><i class="icon icon-search"></i></button></span></div><div class=ins-search><div class=ins-search-mask></div><div class=ins-search-container><div class=ins-input-wrapper><input type=text class=ins-search-input placeholder="Type something..." x-webkit-speech>
+<button type=button class="close ins-close ins-selectable" data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button></div><div class=ins-section-wrapper><div class=ins-section-container></div></div></div></div></form></div><button class="navbar-toggle collapsed" type=button data-toggle=collapse data-target=#main-navbar aria-controls=main-navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span></button></div><nav id=main-navbar class="collapse navbar-collapse" itemscope itemtype=http://schema.org/SiteNavigationElement role=navigation><ul class="nav navbar-nav main-nav"><li class="menu-item menu-item-home"><a href=/><i class="icon icon-home-fill"></i>
+<span class=menu-title>Home</span></a></li><li class="menu-item menu-item-archives"><a href=/posts/><i class="icon icon-archives-fill"></i>
+<span class=menu-title>Archives</span></a></li><li class="menu-item menu-item-categories"><a href=/categories/><i class="icon icon-folder"></i>
+<span class=menu-title>Categories</span></a></li><li class="menu-item menu-item-tags"><a href=/tags/><i class="icon icon-tags"></i>
+<span class=menu-title>Tags</span></a></li><li class="menu-item menu-item-about"><a href=/about/><i class="icon icon-cup-fill"></i>
+<span class=menu-title>About</span></a></li></ul></nav></div></header><aside class=sidebar itemscope itemtype=http://schema.org/WPSideBar><div class=slimContent><div class=widget><h3 class=widget-title>Board</h3><div class=widget-body><div id=board><div class=content><p>enjoy~</p></div></div></div></div><div class=widget><h3 class=widget-title>Tags</h3><div id=tag-cloud-list class=widget-body><a href=/tags/css/ class=tag-list-link rel=3>css<span class=tag-list-count>3</span></a>
+<a href=/tags/emoji/ class=tag-list-link rel=1>emoji<span class=tag-list-count>1</span></a>
+<a href=/tags/html/ class=tag-list-link rel=3>html<span class=tag-list-count>3</span></a>
+<a href=/tags/index/ class=tag-list-link rel=1>index<span class=tag-list-count>1</span></a>
+<a href=/tags/javascript/ class=tag-list-link rel=2>javascript<span class=tag-list-count>2</span></a>
+<a href=/tags/markdown/ class=tag-list-link rel=2>markdown<span class=tag-list-count>2</span></a>
+<a href=/tags/text/ class=tag-list-link rel=1>text<span class=tag-list-count>1</span></a>
+<a href=/tags/themes/ class=tag-list-link rel=1>themes<span class=tag-list-count>1</span></a></div><script>document.onreadystatechange=()=>{document.readyState==="complete"&&tagCloud("#tag-cloud-list a",8,20)};function tagCloud(e,t,n){let o=0,s=0;$(e).each(function(){let e=Number($(this).attr("rel"));o<e&&(o=e),(s>e||s==0)&&(s=e)});let i=(n-t)/(o-s);$(e).each(function(){let e=$(this).attr("rel")-s;$(this).css({"font-size":t+e*i+"px"})})}</script></div><div class=widget><h3 class=widget-title>Categories</h3><div class=widget-body><ul class=category-list><li class=category-list-item><a href=/categories/syntax/ class=category-list-link>syntax</a><span class=category-list-count>1</span></li><li class=category-list-item><a href=/categories/themes/ class=category-list-link>themes</a><span class=category-list-count>1</span></li><li class=category-list-item><a href=/categories/tutorial/ class=category-list-link>tutorial</a><span class=category-list-count>2</span></li></ul></div></div><div class=widget><h3 class=widget-title>Tags</h3><div class=widget-body><ul class=tag-list><li class=tag-list-item><a href=/tags/css/ class=tag-list-link>css</a><span class=tag-list-count>3</span></li><li class=tag-list-item><a href=/tags/emoji/ class=tag-list-link>emoji</a><span class=tag-list-count>1</span></li><li class=tag-list-item><a href=/tags/html/ class=tag-list-link>html</a><span class=tag-list-count>3</span></li><li class=tag-list-item><a href=/tags/index/ class=tag-list-link>index</a><span class=tag-list-count>1</span></li><li class=tag-list-item><a href=/tags/javascript/ class=tag-list-link>javascript</a><span class=tag-list-count>2</span></li><li class=tag-list-item><a href=/tags/markdown/ class=tag-list-link>markdown</a><span class=tag-list-count>2</span></li><li class=tag-list-item><a href=/tags/text/ class=tag-list-link>text</a><span class=tag-list-count>1</span></li><li class=tag-list-item><a href=/tags/themes/ class=tag-list-link>themes</a><span class=tag-list-count>1</span></li></ul></div></div><div class=widget><h3 class=widget-title>Recent Posts</h3><div class=widget-body><ul class="recent-post-list list-unstyled no-thumbnail"><li><div class=item-inner><p class=item-title><a href=/2022/10/quizapp/ class=title>Hướng dẫn tạo ứng dụng quizApp</a></p><p class=item-date><time datetime="2022-10-31 00:00:00 +0000 UTC" itemprop=datePublished>2022-10-31</time></p></div></li><li><div class=item-inner><p class=item-title><a href=/2022/10/todolist/ class=title>Hướng dẫn tạo ứng dụng TodoList với javasript</a></p><p class=item-date><time datetime="2022-10-27 00:00:00 +0000 UTC" itemprop=datePublished>2022-10-27</time></p></div></li><li><div class=item-inner><p class=item-title><a href=/2019/03/markdown-syntax/ class=title>Markdown Syntax Guide</a></p><p class=item-date><time datetime="2019-03-11 00:00:00 +0000 UTC" itemprop=datePublished>2019-03-11</time></p></div></li><li><div class=item-inner><p class=item-title><a href=/2019/03/placeholder-text/ class=title>Placeholder Text</a></p><p class=item-date><time datetime="2019-03-09 00:00:00 +0000 UTC" itemprop=datePublished>2019-03-09</time></p></div></li><li><div class=item-inner><p class=item-title><a href=/2019/03/emoji-support/ class=title>Emoji Support</a></p><p class=item-date><time datetime="2019-03-05 00:00:00 +0000 UTC" itemprop=datePublished>2019-03-05</time></p></div></li></ul></div></div></div></aside><aside class="sidebar sidebar-toc collapse" id=collapseToc itemscope itemtype=http://schema.org/WPSideBar><div class=slimContent><h4 class=toc-title>Catalogue</h4><nav id=toc class="js-toc toc"></nav></div></aside><main class=main role=main><div class=content><article id=- class="article article-type-" itemscope itemtype=http://schema.org/BlogPosting><div class=article-header><h1 itemprop=name><a class=article-title href=/2022/10/todolist/>Hướng dẫn tạo ứng dụng TodoList với javasript</a></h1><div class=article-meta><span class=article-date><i class="icon icon-calendar-check"></i>&nbsp;
+<a href=/2022/10/todolist/ class=article-date><time datetime="2022-10-27 00:00:00 +0000 UTC" itemprop=datePublished>2022-10-27</time></a></span>
+<span class=article-category><i class="icon icon-folder"></i>&nbsp;
+<a class=article-category-link href=/categories/tutorial/>tutorial</a></span>
+<span class=article-tag><i class="icon icon-tags"></i>&nbsp;
+<a class=article-tag-link href=/tags/html/>html</a>
+<a class=article-tag-link href=/tags/css/>css</a>
+<a class=article-tag-link href=/tags/javascript/>javascript</a></span>
+<span class="post-wordcount hidden-xs" itemprop=wordCount>Word Count: 465 words</span>
+<span class="post-readcount hidden-xs" itemprop=timeRequired>Read Time: 3 minutes</span></div></div><div class="article-entry marked-body js-toc-content" itemprop=articleBody><h1 id=hướng-dẫn-tạo-ứng-dụng-todolist-với-javascript>Hướng dẫn tạo ứng dụng TodoList với javascript</h1><p>Ứng dụng TodoList là ứng dụng cơ bản nhất để giúp các lập trình viên mới bắt đầu làm quen với những dòng code nhạt nhẽo trở nên thú vị. Sau đây chúng ta sẽ đi tìm hiểu ngay bây giờ.</p><h2 id=html>html</h2><p>Đầu tiên chúng ta sẽ tạo file <code>.html</code> với đoạn code sau</p><pre><code class=language-html>&lt;form id=&quot;form&quot;&gt;
+  &lt;input
+    type=&quot;text&quot;
+    class=&quot;input&quot;
+    id=&quot;input&quot;
+    placeholder=&quot;Enter your todo&quot;
+    autocomplete=&quot;off&quot;
+  /&gt;
+
+  &lt;ul class=&quot;todos&quot; id=&quot;todos&quot;&gt;&lt;/ul&gt;
+&lt;/form&gt;
+</code></pre><p>Trong đó <code>&lt;form ...>&lt;/form></code> được gọi là thẻ html
+Mỗi một thẻ sẽ mang một ý nghĩa và được sử dụng với mục đích khác nhau</p><p>Đoạn code trên ta có 3 thẻ với:</p><ul><li><p>Thẻ <code>form</code> dùng để: chứa những thẻ với mục đích nhập liệu từ người dùng</p></li><li><p>Thẻ <code>input</code> dùng để: cho người dùng nhập liệu từ bàn phím</p></li><li><p>Thẻ <code>ul</code> dùng để: hiển thị danh sách nội dung</p></li></ul><hr><h2 id=css>css</h2><p>Tiếp theo chúng ta sẽ style cho chúng hay là làm đẹp lại giao diện vì mặc định những thẻ này khi hiển thị trên trình duyệt chúng rất là xấu</p><pre><code class=language-css>form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
+}
+
+.input {
+  border: none;
+  color: #444;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #d5d5d5;
+}
+
+.input:focus {
+  outline-color: rgb(179, 131, 226);
+}
+</code></pre><p>chúng ta sẽ tìm hiểu các thuộc tính css trong bài sau</p><hr><h2 id=javascript>javascript</h2><p>và phần cuối cùng là để cho chúng có thể làm đúng mọi nhiệm vụ của mình thì chúng ta sẽ tại file .js để xử lý chúng.</p><p>Đầu tiên chúng ta sẽ phải chọn được nó trong file js (hay có nghĩa là tham chiếu đến chúng trong dom)</p><pre><code class=language-js>const form = document.getElementById('form')
+const input = document.getElementById('input')
+const todosUL = document.getElementById('todos')
+</code></pre><p>chúng ta sẽ tạo 1 function để xửa lý khi người dùng thêm nội dung todo
+function này sẽ có tác dụng là thêm dữ liệu vào danh sách (ul)</p><pre><code class=language-js>function addTodo(todo) {
+  // lấy dữ liệu trong ô input mà người dùng vừa nhập 
+  let todoText = input.value;
+
+  // kiểm tra xem có tham số truyền vào hay không 
+  if (todo) {
+    todoText = todo.text;
+  }
+
+  // kiểm tra gía trị 
+  if (todoText) {
+    const todoEl = document.createElement(&quot;li&quot;);
+    if (todo &amp;&amp; todo.completed) {
+      todoEl.classList.add(&quot;completed&quot;);
+    }
+
+    todoEl.innerText = todoText;
+
+    todoEl.addEventListener(&quot;click&quot;, () =&gt; {
+      todoEl.classList.toggle(&quot;completed&quot;);
+      // cập nhật vào danh sách
+      updateLS();
+    });
+
+    todoEl.addEventListener(&quot;contextmenu&quot;, (e) =&gt; {
+      e.preventDefault();
+
+      todoEl.remove();
+      updateLS();
+    });
+
+    todosUL.appendChild(todoEl);
+
+    input.value = &quot;&quot;;
+
+    updateLS();
+  }
+}
+</code></pre><p>ở đây ta có thêm một hàm <code>updateLS</code> để cập nhật vào danh sách</p><pre><code class=language-js>function updateLS() {
+    todosEl = document.querySelectorAll('li')
+
+    const todos = []
+
+    todosEl.forEach(todoEl =&gt; {
+        todos.push({
+            text: todoEl.innerText,
+            completed: todoEl.classList.contains('completed')
+        })
+    })
+
+    localStorage.setItem('todos', JSON.stringify(todos))
+}
+</code></pre><p>khi cập nhật danh sách đồng thời ta cập nhật luôn vào localStronge</p></div><div class=article-footer><blockquote class=mt-2x><ul class="post-copyright list-unstyled"><li class="post-copyright-link hidden-xs"><strong>Permalink:</strong>
+<a href=/2022/10/todolist/ title="Hướng dẫn tạo ứng dụng TodoList với javasript" target=_blank rel=external>/2022/10/todolist/</a></li><li class=post-copyright-license><strong>License:</strong>
+<a href=http://creativecommons.org/licenses/by/4.0/deed.zh target=_blank rel=external>CC BY 4.0 CN</a></li></ul></blockquote><div class="panel panel-default panel-badger"><div class=panel-body><figure class=media><div class=media-left><a href=https://github.com/anhdai9966 target=_blank class="img-burn thumb-sm visible-lg"><img src=avatar.png class="img-rounded w-full" alt></a></div><div class=media-body><h3 class=media-heading><a href=https://github.com/anhdai9966 target=_blank><span class=text-dark>dailai9966</span><small class=ml-1x>dai lai</small></a></h3><div>Good Good Study, Day Day Up~</div></div></figure></div></div></div></article></div><nav class="bar bar-footer clearfix" data-stick-bottom><div class=bar-inner><ul class="pager pull-left"><li class=prev><a href=/2019/03/markdown-syntax/ title="Markdown Syntax Guide"><i class="icon icon-angle-left" aria-hidden=true></i><span>&nbsp;&nbsp;Older</span></a></li><li class=next><a href=/2022/10/quizapp/ title="Hướng dẫn tạo ứng dụng quizApp"><span>Newer&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden=true></i></a></li><li class=toggle-toc><a class="toggle-btn collapsed" data-toggle=collapse href=#collapseToc aria-expanded=false title=Catalogue role=button><span>[&nbsp;</span><span>Catalogue</span>
+<i class="text-collapsed icon icon-anchor"></i>
+<i class="text-in icon icon-close"></i>
+<span>]</span></a></li></ul><div class=bar-right><div class=share-component data-sites=weibo,qq,wechat,facebook,twitter data-mobile-sites=weibo,qq,qzone></div></div></div></nav></main><footer class=footer itemscope itemtype=http://schema.org/WPFooter><ul class=social-links><li><a href=https://github.com/anhdai9966 target=_blank title=github data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li><li><a href=/index.xml target=_blank title=rss data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li></ul><div class=copyright>&copy;2017 -
+2022<div class=publishby>Theme by <a href=https://github.com/xiaoheiAh target=_blank>xiaoheiAh </a>base on<a href=https://github.com/xiaoheiAh/hugo-theme-pure target=_blank> pure</a>.</div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script><script src=https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js></script>
+<script>window.jQuery||document.write('<script src="js/jquery.min.js"><\/script>')</script><script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js></script>
+<script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js defer></script>
+<script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js defer></script>
+<script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/html.min.js defer></script>
+<script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/css.min.js defer></script>
+<script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/reactjavascript.min.js defer></script><script>hljs.configure({tabReplace:"    ",classPrefix:""}),hljs.initHighlightingOnLoad()</script>
+<script src=/js/application.min.e4989ab4dc212027af8773861b05b6bc333a1217f6b0a1b3377a3a3dbd454483.js></script>
+<script src=/js/plugin.min.738a460bf4317fac61717f1bca393e53d00973db9754d9f0a81c7312d5874840.js></script>
+<script>(function(e){var t={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},ROOT_URL:"",CONTENT_URL:"/searchindex.json "};e.INSIGHT_CONFIG=t})(window)</script><script type=text/javascript src=/js/insight.min.f424e6eae3482afec666cd218d67cbfe6b6ae3f6a4c5d079f93bd1fde81b29fc29063410afcf84936cf5b74faaa439385242f86ef9d5f251bd260fbb3eb9d83f.js defer></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js></script>
+<script>tocbot.init({tocSelector:".js-toc",contentSelector:".js-toc-content",headingSelector:"h1, h2, h3",hasInnerContainers:!0})</script></body></html>
