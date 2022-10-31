@@ -1,4 +1,4 @@
-baseURL: 'https://github.com/japangermany1998/hugo-blog-reactjs'
+baseURL: ''
 # languageCode: en-us
 languageCode: vi
 theme: pure
