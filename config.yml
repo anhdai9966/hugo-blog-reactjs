@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: '/hugo-blog-reactjs'
 # languageCode: en-us
 languageCode: vi
 theme: pure
