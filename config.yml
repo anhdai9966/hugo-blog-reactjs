@@ -2,7 +2,7 @@ baseURL: ''
 # languageCode: en-us
 languageCode: vi
 theme: pure
-title: Blog dailai9966
+title: Học web
 copyright: CC BY 4.0 CN
 # defaultContentLanguage: en  # en/zh/...
 defaultContentLanguage: vi  # en/zh/...
@@ -13,7 +13,7 @@ enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: ""      # UA-XXXXXXXX-X 
 permalinks:
-  posts: /:year/:month/:filename/
+  posts: /:filename/:month/:year/
   # posts: /:year/:month/:filename/
 
 taxonomies:
@@ -45,7 +45,7 @@ menu:
 
     - identifier: archives
       name: Archives
-      title: Kho
+      title: Bài viết
       url: /posts/
       weight: 2
 
@@ -63,14 +63,14 @@ menu:
 
     - identifier: about
       name: About
-      title: Về tôi
+      title: Thông tin
       url: /about/
       weight: 5
 
 
 params:
   since: 2017
-  dateFormatToUse: "2006-01-02"
+  dateFormatToUse: "02-01-2006"
   enablePostCopyright: true
   copyright_link: http://creativecommons.org/licenses/by/4.0/deed.zh
   # the directory under content folder that you want to render
@@ -125,7 +125,7 @@ params:
       width: 40
       height: 40
       url: favicon.ico
-    title: dailai9966 # 页面title
+    title: Học web # 页面title
     favicon: favicon.ico
     board: <p>enjoy~</p> # 公告牌
 
@@ -133,8 +133,8 @@ params:
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
   share:
     enable: true # 是否启用分享
-    sites: weibo,qq,wechat,facebook,twitter # PC端显示的分享图标
-    mobile_sites: weibo,qq,qzone # 移动端显示的分享图标
+    sites: facebook,youtube # PC端显示的分享图标
+    mobile_sites: facebook,youtube # 移动端显示的分享图标
 
   # Comment
   comment:
