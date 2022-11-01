@@ -4,7 +4,7 @@ title: "Hướng dẫn tạo ứng dụng Todo list"
 date: 2022-10-27
 lastmod: 2022-10-27
 draft: false
-author: "Cường Phạm"
+authors: [CuongPham, DaiLai]
 authorLink: "https://dillonzq.com"
 description: "Discover what the Hugo - LoveIt theme is all about and the core-concepts behind it."
 images: []
@@ -16,9 +16,10 @@ tags: ["javascript", "datatype"]
 # categories: ["documentation"]
 
 lightgallery: true
-
+math:
+  enable: true
 toc:
-  auto: false
+  auto: true
 ---
 # Hướng dẫn tạo ứng dụng TodoList với javascript
 

@@ -5,7 +5,7 @@ define "content" -}} {{- $taxonomies := .Data.Plural -}} {{- $type := .Type -}}
 <div class="page archive">
   {{- /* Title */ -}}
   <h2 class="single-title animate__animated animate__pulse animate__faster">
-    {{- .Params.Title | default (T $taxonomies) | default $taxonomies | dict
+    {{- default (T $taxonomies) | default "tác giả" | dict
     "Some" | T "allSome" -}}
   </h2>
 
