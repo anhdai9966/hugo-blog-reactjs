@@ -10,7 +10,7 @@ theme = "DoIt"
 
 # website title
 # 网站标题
-title = "DoIt"
+title = "Học lập trình Web"
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -88,11 +88,11 @@ enableEmoji = true
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "DoIt"
+        title = "Học lập trình Web"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
-        svgFavicon = ""
+        svgFavicon = "favicon.ico"
         # Safari mask icon color
         iconColor = "#5bbad5"
         # Windows v8-10 tile color
@@ -143,11 +143,11 @@ enableEmoji = true
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
-          subtitle = "Kiến thức Javascript cho người mới bắt đầu"
+          subtitle = "Kiến thức lập trình web cho người mới bắt đầu"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
-          social = true
+          social = false
           # disclaimer (HTML format is supported)
           disclaimer = ""
         # Home page posts
@@ -342,7 +342,7 @@ enableEmoji = true
         # 是否隐藏网站图标资源链接
         noFavicon = false
         # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-        svgFavicon = ""
+        svgFavicon = "favicon.ico"
         # Safari 图标颜色
         iconColor = "#5bbad5"
         # Windows v8-10 磁贴颜色
@@ -536,7 +536,7 @@ enableEmoji = true
       logo = "" 
       # title name
       # 标题名称
-      name = "Javascript Blog"
+      name = "HocWeb.fun"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = "<i class='far fa-edit fa-fw'></i>"

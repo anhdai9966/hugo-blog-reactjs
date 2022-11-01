@@ -40,7 +40,7 @@
                     <span class="menu-item delimiter"></span>
                 {{- end -}}
                 {{- if .Site.IsMultiLingual -}}
-                    <a href="#" onclick="return false;" class="menu-item language" title="{{ T "selectLanguage" }}">
+                    <a href="#" onclick="return false;" class="menu-item language" style="display: none;" title="{{ T "selectLanguage" }}">
                         {{- .Language.LanguageName -}}
                         <i class="fas fa-chevron-right fa-fw"></i>
                         <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;">
