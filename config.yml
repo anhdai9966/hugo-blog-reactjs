@@ -1,4 +1,4 @@
-baseURL: ''
+baseURL: 'https://hocweb.fun/'
 # languageCode: en-us
 languageCode: vi
 theme: pure
@@ -104,10 +104,10 @@ params:
     enabled: true # Whether to show profile bar
     avatar: avatar.png
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-    author: dailai9966
-    author_title: dai lai
-    author_description: Good Good Study, Day Day Up~
-    location: Đại Mỗ, Hà Nội
+    author: Học web
+    author_title: ''
+    author_description: Học, học nữa, học mãi.
+    location: Tố hữu, Hà Nội
     follow: https://github.com/anhdai9966
     # Social Links
     social:
@@ -115,7 +115,7 @@ params:
         github: https://github.com/anhdai9966
         # weibo: http://weibo.com/{yourid}
         # twitter: https://twitter.com/
-        # facebook: /
+        facebook: https://www.facebook.com/techmastervn
         rss: /index.xml
       link_tooltip: false # enable the social link tooltip, options: true, false
   # Site
@@ -132,7 +132,7 @@ params:
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
   share:
-    enable: true # 是否启用分享
+    enable: false # 是否启用分享
     sites: facebook,youtube # PC端显示的分享图标
     mobile_sites: facebook,youtube # 移动端显示的分享图标
 
@@ -181,14 +181,14 @@ params:
   # wordcount
   postCount:
     enable: true
-    wordcount: true # 文章字数统计
+    wordcount: false # 文章字数统计
     min2read: true # read time 阅读时长预计
 
   # config
   config:
     skin: theme-blue # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
     layout: main-center # main-left main-center main-right
-    excerpt_link: Read More
+    excerpt_link: Đọc thêm
     toc: true
 
   # Sidebar
