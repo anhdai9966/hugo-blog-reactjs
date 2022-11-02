@@ -84,6 +84,7 @@ Worker: Là một Saga sẽ thực thi các hành động bên trong nó mỗi k
 
 ví dụ:
 
+```js
 function* watcher() {
   while (true) {
     const action = yield take(ACTION)
@@ -94,9 +95,12 @@ function* watcher() {
 function* worker(payload) {
   // ... do some stuff
 }
+```
 
-3. Tổng kết
+## Tổng kết
 Trên đây mình đã tổng hợp lại một số khái niệm của Redux Saga để có thể giúp mọi người có cái nhìn tổng quan về nó. Hy vọng qua bài viết này các bạn đã hiểu thêm về các khái niệm trong Redux Saga và có thể áp dụng nó vào trong các dự án mình. Happy coding! 😁
 
 Tài liệu tham khảo:
 https://redux-saga.js.org/docs/Glossary
+
+> Tham khảo nhiều hơn các khóa học onlab - online [tại đây](https://techmaster.vn/)
