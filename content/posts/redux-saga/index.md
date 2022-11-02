@@ -1,7 +1,7 @@
 ---
 weight: 1
 title: "Khám phá các khái niệm trong Redux Saga"
-date: 2022-11-02
+date: 2022-11-01
 lastmod: 2022-11-02
 draft: false
 authors: ["DaiLai"]
