@@ -6,7 +6,7 @@ lastmod: 2022-10-27T21:29:01+08:00
 draft: false
 author: "Cường Phạm"
 authorLink: "https://dillonzq.com"
-description: "Discover what the Hugo - LoveIt theme is all about and the core-concepts behind it."
+description: "Thuộc tính NaN trong JavaScript là gì?"
 images: []
 resources:
   - name: "featured-image"
@@ -21,13 +21,13 @@ toc:
   auto: false
 ---
 
-Ở bài viết này, chúng ta sẽ cùng nhau tìm hiểu về thuộc tính NaN trong JavaScript thông qua một …
+Ở bài viết này, chúng ta sẽ cùng nhau tìm hiểu về thuộc tính NaN trong JavaScript thông qua một số ví dụ dưới đây...
 
 <!--more-->
 
 ## 1.NaN trong JavaScript là gì?
 
-Trong JavaScript, NaN là viết tắt của Not a Number. Nó đại diện cho một giá trị không phải là một số hợp lệ. Nó có thể được sử dụng để kiểm tra xem một số được nhập vào có phải là một số hợp lệ hay không. Để gán một biến cho giá trị NaN, chúng ta có thể sử dụng một trong hai cách sau:
+Trong JavaScript, NaN là viết tắt của Not a Number. Nó đại diện cho một giá trị không phải là một số hợp lệ. Nó có thể được sử dụng để kiểm tra xem một số được nhập vào có phải là một số hợp lệ hay không. Để gán một biến cho giá trị NaN, chúng ta có thể sử dụng một trong hai cách sau :
 
 ```
 let a = NaN

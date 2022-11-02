@@ -21,6 +21,7 @@ math:
 toc:
   auto: true
 ---
+
 # Hướng dẫn tạo ứng dụng TodoList với javascript
 
 Ứng dụng TodoList là ứng dụng cơ bản nhất để giúp các lập trình viên mới bắt đầu làm quen với những dòng code nhạt nhẽo trở nên thú vị. Sau đây chúng ta sẽ đi tìm hiểu ngay bây giờ.
@@ -96,9 +97,9 @@ và phần cuối cùng là để cho chúng có thể làm đúng mọi nhiệm
 Đầu tiên chúng ta sẽ phải chọn được nó trong file js (hay có nghĩa là tham chiếu đến chúng trong dom)
 
 ```js
-const form = document.getElementById('form')
-const input = document.getElementById('input')
-const todosUL = document.getElementById('todos')
+const form = document.getElementById("form");
+const input = document.getElementById("input");
+const todosUL = document.getElementById("todos");
 ```
 
 chúng ta sẽ tạo 1 function để xửa lý khi người dùng thêm nội dung todo
@@ -106,15 +107,15 @@ function này sẽ có tác dụng là thêm dữ liệu vào danh sách (ul)
 
 ```js
 function addTodo(todo) {
-  // lấy dữ liệu trong ô input mà người dùng vừa nhập 
+  // lấy dữ liệu trong ô input mà người dùng vừa nhập
   let todoText = input.value;
 
-  // kiểm tra xem có tham số truyền vào hay không 
+  // kiểm tra xem có tham số truyền vào hay không
   if (todo) {
     todoText = todo.text;
   }
 
-  // kiểm tra gía trị 
+  // kiểm tra gía trị
   if (todoText) {
     const todoEl = document.createElement("li");
     if (todo && todo.completed) {
@@ -145,22 +146,22 @@ function addTodo(todo) {
 }
 ```
 
-ở đây ta có thêm một hàm `updateLS` để cập nhật vào danh sách 
+ở đây ta có thêm một hàm `updateLS` để cập nhật vào danh sách
 
 ```js
 function updateLS() {
-    todosEl = document.querySelectorAll('li')
+  todosEl = document.querySelectorAll("li");
 
-    const todos = []
+  const todos = [];
 
-    todosEl.forEach(todoEl => {
-        todos.push({
-            text: todoEl.innerText,
-            completed: todoEl.classList.contains('completed')
-        })
-    })
+  todosEl.forEach((todoEl) => {
+    todos.push({
+      text: todoEl.innerText,
+      completed: todoEl.classList.contains("completed"),
+    });
+  });
 
-    localStorage.setItem('todos', JSON.stringify(todos))
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
 ```
 
