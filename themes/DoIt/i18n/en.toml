@@ -19,10 +19,10 @@ other = "bài viết"
 other = "Tất cả {{ .Some }}"
 
 [tag]
-other = "thẻ tags"
+other = "tags"
 
 [tags]
-other = "thẻ tags"
+other = "tags"
 
 [category]
 other = "danh mục"
@@ -128,8 +128,8 @@ one = "One word"
 other = "{{ .Count }} từ"
 
 [readingTime]
-one = "One minute"
-other = "{{ .Count }} phút"
+one = "1 phút"
+other = "{{ .Count }} phút đọc"
 
 [views]
 other = "lượt xem"

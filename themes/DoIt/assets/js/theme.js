@@ -547,7 +547,8 @@ function initHighlight () {
       $copy.insertAdjacentHTML('afterbegin', '<i class="far fa-copy fa-fw"></i>')
       $copy.classList.add('copy')
       const code = $code.innerText
-      if (window.config.code.maxShownLines < 0 || code.split('\n').length < window.config.code.maxShownLines + 2) $chroma.classList.add('open')
+      // if (window.config.code.maxShownLines < 0 || code.split('\n').length < window.config.code.maxShownLines + 2) 
+      $chroma.classList.add('open')
       if (window.config.code.copyTitle) {
         $copy.setAttribute('data-clipboard-text', code)
         $copy.title = window.config.code.copyTitle
