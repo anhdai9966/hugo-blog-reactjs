@@ -12,7 +12,7 @@ resources:
   - name: "featured-image"
     src: "featured-image.png"
 
-tags: ["javascript", "datatype"]
+tags: ["javascript"]
 # categories: ["documentation"]
 
 lightgallery: true
